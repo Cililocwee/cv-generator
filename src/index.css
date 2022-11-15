@@ -1,0 +1,163 @@
+:root {
+  --header-color: #92a6db;
+  --highlight-color: #a6c6ea;
+  --background-color: #ffffff;
+  --pop-out: #e3e3d3;
+  --font-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.resume-output {
+  background: var(--background);
+  height: 842px;
+  width: 595px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.info-column,
+.highlight-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-column {
+  background: var(--highlight-color);
+  height: 1fr;
+  width: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-image: url("./components/resume/words/harold.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about-me p {
+  text-align: left;
+}
+
+.social-media {
+  width: 100%;
+}
+
+.social-media ul,
+.skill-div ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 75px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.references {
+  display: flex;
+  flex-direction: column;
+  line-height: 3px;
+  gap: 3px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.nameplate {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--pop-out);
+}
+
+.name-atom {
+  /* background-color: aqua; */
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+.name-atom p {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.work-experience-title-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-atom {
+  text-align: left;
+}
+
+.work-experience p,
+.education p {
+  margin: 0;
+}
+
+.skill-div {
+  padding: 10px;
+}
+
+.education-atom {
+  margin-bottom: 10px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.degree-line,
+.date-line {
+  display: flex;
+}
