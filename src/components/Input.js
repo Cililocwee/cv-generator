@@ -5,6 +5,8 @@ import ProfilePicture from "./resume/sentences/ProfilePicture";
 import SocialMedia from "./resume/sentences/SocialMedia";
 import References from "./resume/sentences/References";
 import WorkExperience from "./resume/sentences/WorkExperience";
+import Skills from "./resume/sentences/Skills";
+import Education from "./resume/sentences/Education";
 
 export default class NameInput extends Component {
   constructor(props) {
@@ -31,6 +33,19 @@ export default class NameInput extends Component {
       <div className="input-wrapper">
         <div className="general-input">
           <form className="general-input-form">
+            <ul>
+              <li>Profile Picture Upload</li>
+              <li>About Me Input</li>
+              <li>Social Media Input</li>
+              <li>References Input</li>
+              <li>***</li>
+              <li>Name input</li>
+              <li>Contact info input</li>
+              <li>Experience input</li>
+              <li>Skills input</li>
+              <li>Educaiton input</li>
+            </ul>
+
             <label>
               Name:
               <input
@@ -64,6 +79,8 @@ export default class NameInput extends Component {
           <div className="info-column">
             <NamePlate name={this.state.value} />
             <WorkExperience />
+            <Skills />
+            <Education />
           </div>
         </div>
       </div>

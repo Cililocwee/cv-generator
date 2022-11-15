@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SkillAtom from "./SkillAtom";
+import SkillAtom from "../words/SkillAtom";
 
 export default class Skills extends Component {
   render() {
