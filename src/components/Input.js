@@ -6,25 +6,22 @@ import SocialMedia from "./resume/sentences/SocialMedia";
 import References from "./resume/sentences/References";
 import WorkExperience from "./resume/sentences/WorkExperience";
 import Skills from "./resume/sentences/Skills";
-import Education from "./resume/sentences/Education";
+import EditableTextField from "./resume/sentences/EditableTextField";
 
 export default class NameInput extends Component {
   constructor(props) {
     super(props);
     this.state = {
       value: "",
-      blurb: "",
       email: "",
       phonenumber: "",
       location: "",
 
       file: "",
       imagePreviewUrl: null,
-      networking: "",
+      education: "hi",
     };
-
-    this.handleBlurb = this.handleBlurb.bind(this);
-    this.handleNetworking = this.handleNetworking.bind(this);
+    this.handleClick = this.handleClick.bind(this);
 
     this.handleName = this.handleName.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
@@ -32,12 +29,8 @@ export default class NameInput extends Component {
     this.handleLocation = this.handleLocation.bind(this);
   }
 
-  handleBlurb(event) {
-    this.setState({ blurb: event.target.value });
-  }
-
-  handleNetworking(event) {
-    this.setState({ networking: event.target.value });
+  handleClick(event) {
+    eval(this[event.target.name]).bind(this)(event);
   }
 
   handleName(event) {
@@ -75,14 +68,6 @@ export default class NameInput extends Component {
       <div className="input-wrapper">
         <div className="general-input">
           <form className="general-input-form">
-            <ul>
-              <li>References Input</li>
-              <li>***</li>
-
-              <li>Experience input</li>
-              <li>Skills input</li>
-              <li>Education input</li>
-            </ul>
             <fieldset>
               <legend>Highlights:</legend>
               <label>
@@ -91,28 +76,6 @@ export default class NameInput extends Component {
                   id="photo-upload"
                   type="file"
                   onChange={this.photoUpload}
-                />
-              </label>
-
-              <label>
-                About Me
-                <textarea
-                  rows="5"
-                  type="text"
-                  value={this.state.blurb}
-                  onChange={this.handleBlurb}
-                  placeholder="I'm a pleasant person"
-                />
-              </label>
-
-              <label>
-                Networking
-                <textarea
-                  rows="5"
-                  type="text"
-                  value={this.state.networking}
-                  onChange={this.handleNetworking}
-                  placeholder="https://github.com/HaroldPainman"
                 />
               </label>
             </fieldset>
@@ -165,9 +128,9 @@ export default class NameInput extends Component {
         <div className="resume-output">
           <div className="highlight-column">
             <ProfilePicture src={imagePreviewUrl} />
-            <AboutMe blurb={this.state.blurb} />
-            <SocialMedia links={this.state.networking} />
-            <References />
+            <AboutMe />
+            <SocialMedia />
+            <Skills />
           </div>
           <div className="info-column">
             <NamePlate
@@ -177,8 +140,8 @@ export default class NameInput extends Component {
               location={this.state.location}
             />
             <WorkExperience />
-            <Skills />
-            <Education />
+            <EditableTextField value={this.state.education} />
+            <References />
           </div>
         </div>
       </div>

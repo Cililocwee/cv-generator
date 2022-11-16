@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import EditableTextField from "./EditableTextField";
 
 export default class AboutMe extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export default class AboutMe extends Component {
     return (
       <div className="about-me">
         <h4>About Me</h4>
-        <p>{blurb}</p>
+        <EditableTextField value={blurb} />
       </div>
     );
   }
