@@ -26,7 +26,7 @@ code {
   width: 595px;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  border: 1px solid black;
+  border: 1px solid var(--font-color);
   margin-top: 10px;
 }
 
@@ -39,7 +39,11 @@ code {
 .highlight-column {
   background: var(--highlight-color);
   height: 1fr;
-  width: 1fr;
+  width: 150px;
+  max-width: 198px;
+  line-break: strict;
+  white-space: pre-wrap;
+  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +54,7 @@ code {
 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
+  align-self: center;
 }
 
 .profile-picture {
@@ -57,11 +62,44 @@ h4 {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background-image: url("./components/resume/words/harold.jpg");
   background-size: cover;
   background-position: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  border: 1px solid var(--pop-out);
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.img-upload:before {
+  content: "\f093";
+  font-size: 90px;
+  position: absolute;
+  padding-top: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #63d3a6;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fff;
+}
+
+img {
+  width: auto;
+  height: 100%;
 }
 
 .about-me p {
@@ -160,4 +198,10 @@ h4 {
 .degree-line,
 .date-line {
   display: flex;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

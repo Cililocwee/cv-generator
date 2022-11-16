@@ -1,12 +1,16 @@
 import React from "react";
-import ContactAtom from "../words/ContactAtom";
 
-export default function Contact() {
+export default function Contact({ email, phonenumber, location }) {
   return (
     <div className="contacts">
-      <ContactAtom info="hpainman@gmail.com" />
+      <div className="contacts-atom">
+        <p>{email}</p>
+        <p>{phonenumber}</p>
+        <p>{location}</p>
+      </div>
+      {/* <ContactAtom info="hpainman@gmail.com" />
       <ContactAtom info="(+84) 76 534 1522" />
-      <ContactAtom info="District 7, Ho Chi Minh City" />
+      <ContactAtom info="District 7, Ho Chi Minh City" /> */}
     </div>
   );
 }

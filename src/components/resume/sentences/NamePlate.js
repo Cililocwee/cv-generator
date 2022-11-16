@@ -11,7 +11,11 @@ export default class NamePlate extends Component {
     return (
       <div className="nameplate">
         <NameAtom name={this.props.name} />
-        <Contact />
+        <Contact
+          email={this.props.email}
+          phonenumber={this.props.phonenumber}
+          location={this.props.location}
+        />
       </div>
     );
   }
