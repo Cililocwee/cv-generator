@@ -3,22 +3,20 @@ import EditableTextField from "./EditableTextField";
 
 export default class SocialMedia extends Component {
   render() {
-    const social1 = "Github";
-    const social2 = "Linkedin";
-    const sociallink1 = "github.com/Example";
-    const sociallink2 = "linkedin.com/Example";
     return (
       <div className="social-media">
         <h4>Social Media</h4>
-        <EditableTextField value={social1} />
+        <EditableTextField value="Github" />
         <em>
-          <EditableTextField value={sociallink1} />
+          <br />
+          <EditableTextField value="github.com/Example" />
         </em>
 
         <br />
-        <EditableTextField value={social2} />
+        <EditableTextField value="Linkedin" />
         <em>
-          <EditableTextField value={sociallink2} />
+          <br />
+          <EditableTextField value="linkedin.com/Example" />
         </em>
       </div>
     );

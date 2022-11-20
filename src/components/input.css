@@ -1,0 +1,196 @@
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.resume-output {
+  background: var(--background);
+  height: 842px;
+  width: 595px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid var(--font-color);
+  margin-top: 10px;
+}
+
+.info-column,
+.highlight-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-column {
+  background: var(--highlight-color);
+  height: 1fr;
+  width: 150px;
+  max-width: 198px;
+  line-break: strict;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-picture {
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--pop-out);
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+img {
+  width: auto;
+  height: 100%;
+}
+
+.social-media {
+  width: 100%;
+}
+
+.skill-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-atom {
+  /* background-color: aqua; */
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+.name-atom p {
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.work-experience p,
+.education p {
+  margin: 0;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: auto;
+  /* align-items: center; */
+  text-align: left;
+}
+
+.education-wrapper {
+  height: fit-content;
+}
+
+.references {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3px;
+  white-space: pre-wrap;
+  padding-bottom: 10px;
+}
+
+#photo-upload {
+  opacity: 0;
+  height: 100%;
+  width: auto;
+}
+
+#profile-picture:hover {
+  display: none;
+}
+
+.degree1-top,
+.degree1-bottom,
+.degree2-top,
+.degree2-bottom {
+  display: flex;
+}
+
+.degree1-bottom,
+.degree2-bottom {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 5px;
+}
+
+.nameplate {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--pop-out);
+  padding: 10px 20px;
+}
+
+.nameplate-name {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nameplate-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Under construction */
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.work-experience-title-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-atom {
+  text-align: left;
+}
+
+.work-list {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  justify-content: space-between;
+}

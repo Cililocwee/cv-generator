@@ -17,7 +17,7 @@ export default function WorkAtom({
       </div>
 
       <p>
-        {company} | <em>{location} </em>
+        {company} <em>{location} </em>
       </p>
 
       <p>{description}</p>

@@ -1,10 +1,10 @@
 import "./App.css";
-import NameInput from "./components/Input";
+import EditableResume from "./components/Input";
 
 function App() {
   return (
     <div className="App">
-      <NameInput />
+      <EditableResume />
     </div>
   );
 }

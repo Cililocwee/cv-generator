@@ -3,13 +3,6 @@ import EditableTextField from "./EditableTextField";
 
 export default class References extends Component {
   render() {
-    const reference1name = "Fox Mulder";
-    const reference1position = "FBI Agent";
-    const reference1contact = "fmulder@redacted.org";
-
-    const reference2name = "Dana Scully";
-    const reference2position = "Forensic Pathologist";
-    const reference2contact = "dr.dscully@redacted.org";
     return (
       <>
         <h4>References</h4>
@@ -17,18 +10,22 @@ export default class References extends Component {
         <div className="references">
           <div className="reference-cell">
             <strong>
-              <EditableTextField value={reference1name} />
+              <EditableTextField value="Fox Mulder" />
             </strong>
-            <EditableTextField value={reference1position} />
-            <EditableTextField value={reference1contact} />
+            <br />
+            <EditableTextField value="FBI Agent" />
+            <br />
+            <EditableTextField value="fmulder@redacted.org" />
           </div>
 
           <div className="reference-cell">
             <strong>
-              <EditableTextField value={reference2name} />
+              <EditableTextField value="Dana Scully" />
             </strong>
-            <EditableTextField value={reference2position} />
-            <EditableTextField value={reference2contact} />
+            <br />
+            <EditableTextField value="Forensic Pathologist" />
+            <br />
+            <EditableTextField value="dr.dscully@redacted.org" />
           </div>
         </div>
       </>

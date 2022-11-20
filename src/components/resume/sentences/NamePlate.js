@@ -1,21 +1,19 @@
 import React, { Component } from "react";
-import NameAtom from "../words/NameAtom";
-import Contact from "./Contact";
+import EditableTextField from "./EditableTextField";
 
 export default class NamePlate extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="nameplate">
-        <NameAtom name={this.props.name} />
-        <Contact
-          email={this.props.email}
-          phonenumber={this.props.phonenumber}
-          location={this.props.location}
-        />
+        <span className="nameplate-name">
+          <EditableTextField value="John Everyman" />
+        </span>
+
+        <div className="nameplate-details">
+          <EditableTextField value="j.everyman@example.com" />
+          <EditableTextField value="+84.76.899.9899" />
+          <EditableTextField value="Danang, Vietnam" />
+        </div>
       </div>
     );
   }
