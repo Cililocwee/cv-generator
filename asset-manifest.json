@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cililocwee.github.io/cv-generator/static/css/main.47f00be8.css",
+    "main.js": "/Cililocwee.github.io/cv-generator/static/js/main.9f63fbef.js",
+    "index.html": "/Cililocwee.github.io/cv-generator/index.html",
+    "main.47f00be8.css.map": "/Cililocwee.github.io/cv-generator/static/css/main.47f00be8.css.map",
+    "main.9f63fbef.js.map": "/Cililocwee.github.io/cv-generator/static/js/main.9f63fbef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47f00be8.css",
+    "static/js/main.9f63fbef.js"
+  ]
+}
