@@ -1,14 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import EditableTextField from "./EditableTextField";
 
-export default class AboutMe extends Component {
-  render() {
-    const { blurb = "Describe yourself and your objective here." } = this.props;
-    return (
-      <div className="about-me">
-        <h4>About Me</h4>
-        <EditableTextField value={blurb} />
-      </div>
-    );
-  }
+export default function AboutMe() {
+  return (
+    <div className="about-me">
+      <h4>About Me</h4>
+      <EditableTextField value="Describe yourself and your objective here." />
+    </div>
+  );
 }

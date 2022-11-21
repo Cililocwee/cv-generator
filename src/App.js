@@ -1,5 +1,5 @@
 import "./App.css";
-import EditableResume from "./components/Input";
+import EditableResume from "./components/EditableResume";
 
 function App() {
   return (
